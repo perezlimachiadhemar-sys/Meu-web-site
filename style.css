@@ -1,0 +1,31 @@
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('imagemdegames1.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 1;
+
+}
+.form-conteiner {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0173dd;
+    border-radius: 8px;
+
+    position: relative;
+    z-index: 2;
+}
+body {
+    background-color: #53f10a;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}

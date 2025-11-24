@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1,0">
+         <title>Esta é minha Página</title>
+         <link rel="stylesheet" href="blog_styles.css">
+         <link rel="stylesheet" href="style.contato.css">
+         
+</head>
+<body>
+ <header>
+   <h1>Blog de Videogames</h1>
+   <p>Tudo sobre o mundo dos Videogames e suas atualizações.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Hoje</a></li>
+      <li><a href="#">Artigos</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+   <h2>Bem-vindo Jogador ao Nosso Blog!</h2>
+   <p>Aqui você pode navegar sobre as últimas informações sobre os videogames.</p>
+  <aside>
+    <h3>Próximos Lançamentos</h3>
+    <ul>
+      <li><a href="#">Left 4 dead 3 Confirmado para o 2026!</a></li>
+      <li><a href="#">GT7, o Jogo Que Revolucionará o Mundos dos Videogames em 2030!</a></li>
+    </ul>
+    <p>Siga-nos nas redes sociais!</p>
+  </aside>
+    <img src="imagemdegames.jfif" class="centro">
+    <h3>Video em Destaque: Trailer ofcial left 4 dead 3 </h3>
+    <section class="video-section">
+        <div class="video-conteiner">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7AnaaY7mU1s?si=lNNC8xY8HYRRLzVj" sandbox="allow-same-origin allow-scripts allowfullscreen"></iframe>
+                                                      
+        </div>
+    </section>
+    <h3>Downloads do Clash Royale</h3>
+    <section class="box">
+        <ul class="downloads">
+            <li><a href="#" download>Tutarial de instalação do Clash Royale</a></li>
+            <li><a href="#" download>Guia do Clash Royale</a></li>
+            <li><a href="#" download>Guia avançada do Clash Royale</a></li>
+        </ul>
+        <p class="download-info">
+            Para abrir os arquivos PDF você precisará de um leitor como o Adobe Reader.
+        </p>
+    </section>
+    <h3>Quer receber novidades?</h3>
+    <p>Clique no botão abaixo para se inscrever.</p>
+    <div style="margin-top: 20px;">
+        <input type="text" id="nomeInput" placeholder="Digite seu nome completo" style="padding: 10px; border-radius: 5px; border: 1px solid#ccc; margin-top: 10px; display: block; ">
+        <input type="email" id="emailInput" placeholder="Digite seu e-mail" style="padding: 10px; border-radius: 5px; border: 1px solid#ccc; margin-top: 10px; display: block; ">
+        <input type="password" id="senhaInput" placeholder="Digite sua senha" style="padding: 10px; border-radius: 5px; border: 1px solid#ccc; margin-top: 10px; display: block; ">
+        <input type="tel" id="telefoneInput" placeholder="Digite seu telefone" style="padding: 10px; border-radius: 5px; border: 1px solid#ccc; margin-top: 10px; display: block; ">
+      <button onclick="assinar()"
+        style="padding: 10px 20px; border: none; background: purple; color: white; border-radius: 30px;">
+      Assinar Aqui
+      </button>
+    </div>
+    <script>
+      function assinar() {
+        let nome = document.getElementById("nomeInput").value;
+        let email = document.getElementById("emailInput").value;
+        let senha = document.getElementById("senhaInput").value;
+        let telefone = document.getElementById("telefoneInput").value;
+        if (nome === "" || email === "" || senha === "" || telefone === "") {
+          alert("Por favor, preencha todos os campos antes de assinar!");
+        } else {
+          alert("Obrigado por se inscrever, " + nome + "!");
+        }
+      }
+    </script>
+    </main>
+    <footer>
+      <p>&copy;2025 Blog de Videogames. Todos os direitos reservados.</p>
+      <p>Desenvolvido por alunos de programação.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+/* ========================================= */
+/* Estilos EspecÃ­ficos da PÃ¡gina (VÃ­deos e Downloads) */
+/* ========================================= */
+.centro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+.video-conteiner, .download-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa; /* Fundo levemente diferente para as seÃ§Ãµes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.video-conteiner h3, .download-section h3 {
+    color: #343a40;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+/* Estilo para vÃ­deo responsivo (YouTube) */
+.video-conteiner {
+    position: relative;
+    padding-bottom: 56.25%; /* ProporÃ§Ã£o 16:9 (altura / largura) */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-conteiner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilos para a seÃ§Ã£o de downloads */
+.downloads {
+    list-style: none; /* Remove o marcador de lista padrÃ£o */
+    padding: 0;
+}
+
+.downloads li {
+    margin-bottom: 15px;
+    display: flex; /* Para alinhar o Ã­cone, texto e tamanho */
+    align-items: center;
+    background-color: #e9f7ef; /* Fundo suave para cada item */
+    padding: 12px 15px;
+    border-radius: 5px;
+    border-left: 5px solid #e3eb07; /* Borda de destaque */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.downloads li:hover {
+    background-color: #d4edda;
+    transform: translateX(5px); /* Efeito suave ao passar o mouse */
+}
+
+.downloads li a {
+    color: #f8a202; /* Cor verde para os links de download */
+    font-weight: bold;
+    flex-grow: 1; /* Permite que o link ocupe o espaÃ§o disponÃ­vel */
+    display: flex;
+    align-items: center;
+}
+
+.downloads li a .fas { /* Estilo para o Ã­cone de PDF */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.downloads li span {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-left: 15px;
+    white-space: nowrap; /* Impede que o texto "quebre" em vÃ¡rias linhas */
+}
+
+.downloads p {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="form-conteiner">
+    <title>Formulário de Contato Simples</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+     <h1>Formulário de Contato</h1>
+     <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+    </header>
+    <form id="meuFormulario">
+      <label for="nome">Nome Completo:</label><br>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome aqui"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Seu nome aqui"><br><br>
+            
+      <label for="senha">Senha:</label><br>
+      <input type="password" id="senha" name="senha" placeholder="**********"><br><br>
+
+      <label for="idade">Sua Idade:</label><br>
+      <input type="number" id="idade" name="idade" min="18" max="99"><br><br>
+
+      <p>Qual seu gênero favorito de videogame?</p>
+      <input type="radio" id="acao" name="genero_videogame" value="acao">
+      <label for="acao">Ação</label><br>
+      <input type="radio" id="aventura" name="genero_videogame" value="aventura">
+      <label for="aventura">Aventura</label><br>
+      <input type="radio" id="rpg" name="genero_videogame" value="rpg">
+      <label for="rpg">RPG</label><br><br>
+      <label for="mensagem">Sua Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Digite sua mensagem aqui..."></textarea><br><br>
+
+      <button type="submit">Enviar Formulário</button>
+      <button type="reset">Limpar Campos</button>
+    </form>
+    <script>
+      document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+        const campos = document.querySelectorAll("#meuFormulario input, #meuFormulario select, #meuFormulario textarea");
+        let vazio = false;
+        campos.forEach(campo => {
+          if (campo.value.trim() === "")  {
+            vazio = true;
+          }
+        });
+        if (vazio) {
+          event.preventDefault();
+          alert("Por favor, preencha todos os campos antes de enviar!");
+        }
+      });
+    </script>
+    </div>
+    
+  </body>
+  <div class="bg-img"></div>
+</html>
